@@ -199,7 +199,7 @@ locals {
           containers = [
             {
               name = "boundary-worker"
-              image = "hashicorp/boundary-worker-hcp"
+              image = "hashicorp/boundary-enterprise"
               command = [ "boundary-worker" ]
               args = [ "server", "-config", "/etc/boundary/boundary-worker-config" ]
               securityContext = {
