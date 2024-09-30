@@ -200,7 +200,7 @@ locals {
             {
               name = "boundary-worker"
               image = "hashicorp/boundary-enterprise"
-              command = [ "boundary-worker" ]
+              command = [ "boundary" ]
               args = [ "server", "-config", "/etc/boundary/boundary-worker-config" ]
               securityContext = {
                 capabilities = {
